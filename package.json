@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@storyblok/react": "^1.0.3",
+    "@tailwindcss/line-clamp": "^0.4.0",
+    "storyblok-rich-text-react-renderer": "^2.5.4",
     "next": "^12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"

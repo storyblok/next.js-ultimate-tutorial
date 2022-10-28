@@ -1,7 +1,15 @@
 import { useState } from "react";
 import Link from "next/link";
-const Navigation = () => {
+import { useRouter } from 'next/router'
+
+const Navigation = ({locales, locale, defaultLocale}) => {
+  const router = useRouter()
+
   const [openMenu, setOpenMenu] = useState(false);
+
+  const changeLocale = (loc) => {
+    router.push(router.asPath, router.asPath ,{locale: loc})
+  }
 
   return (
     <div className="relative bg-white border-b-2 border-gray-100 z-20">
@@ -32,6 +40,7 @@ const Navigation = () => {
               aria-expanded="false"
             >
               <span className="sr-only">Open menu</span>
+              {/* <!-- Heroicon name: outline/menu --> */}
               <svg
                 className="h-6 w-6"
                 xmlns="http://www.w3.org/2000/svg"
@@ -68,6 +77,14 @@ const Navigation = () => {
                 Services
               </a>
             </Link>
+            {locales.map(loc => (     
+                <span key={loc} onClick={ () => changeLocale(loc)}
+                    className={`block px-4 py-1 md:p-2 rounded-lg lg:px-4 cursor-pointer ${
+                      locale === loc ? "bg-black text-white" : ""
+                    }`}>
+                    {loc}
+              </span>
+              ))}
           </div>
         </div>
       </div>
@@ -117,6 +134,7 @@ const Navigation = () => {
                 <nav className="grid gap-y-8">
                   <Link href="/about">
                     <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                      {/* <!-- Heroicon name: outline/chart-bar --> */}
                       <span className="ml-3 text-base font-medium text-gray-900">
                         
                         About
@@ -125,6 +143,7 @@ const Navigation = () => {
                   </Link>
                   <Link href="/blog">
                     <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                      {/* <!-- Heroicon name: outline/cursor-click --> */}
                       <span className="ml-3 text-base font-medium text-gray-900">
                         
                         Blog
@@ -139,6 +158,14 @@ const Navigation = () => {
                       </span>
                     </a>
                   </Link>
+                  {locales.map(loc => (     
+                <span key={loc} onClick={ () => changeLocale(loc)}
+                    className={`block px-4 py-1 md:p-2 rounded-lg lg:px-4 cursor-pointer ${
+                      locale === loc ? "bg-black text-white" : ""
+                    }`}>
+                    {loc}
+              </span>
+              ))}
                 </nav>
               </div>
             </div>

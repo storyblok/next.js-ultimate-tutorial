@@ -3,7 +3,7 @@ import Footer from "./Footer";
 
 const Layout = ({ children, locale, locales, defaultLocale }) => (
   <div>
-    <Navigation
+    <Navigation locales={locales} locale={locale} defaultLocale={defaultLocale}
     />
     {children}
     <Footer />

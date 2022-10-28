@@ -7,8 +7,10 @@ import {
   StoryblokComponent,
 } from "@storyblok/react";
 
-export default function Page({ story }) {
-  story = useStoryblokState(story);
+export default function Page({ story, locales, locale, defaultLocale }) {
+  story = useStoryblokState(story, {
+    language: locale
+  });
 
   return (
     <div >
@@ -16,18 +18,19 @@ export default function Page({ story }) {
         <title>{story ? story.name : "My Site"}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout>
-        <StoryblokComponent blok={story.content} />
+      <Layout locales={locales} locale={locale} defaultLocale={defaultLocale}>
+        <StoryblokComponent blok={story.content} locale={locale}  />
       </Layout>
     </div>
   );
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params, locales, locale, defaultLocale }) {
   let slug = params.slug ? params.slug.join("/") : "home";
 
   let sbParams = {
     version: "draft", // or 'published'
+    language: locale
   };
 
   const storyblokApi = getStoryblokApi();
@@ -35,6 +38,9 @@ export async function getStaticProps({ params }) {
 
   return {
     props: {
+      locales, 
+      locale, 
+      defaultLocale,
       story: data ? data.story : false,
       key: data ? data.story.id : false,
     },
@@ -42,7 +48,7 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export async function getStaticPaths() {
+export async function getStaticPaths({locales}) {
   const storyblokApi = getStoryblokApi();
   let { data } = await storyblokApi.get("cdn/links/");
 
@@ -55,7 +61,10 @@ export async function getStaticPaths() {
     const slug = data.links[linkKey].slug;
     let splittedSlug = slug.split("/");
 
-    paths.push({ params: { slug: splittedSlug } });
+
+    for (const locale of locales) {
+      paths.push({ params: { slug: splittedSlug }, locale });
+    }
   });
 
   return {

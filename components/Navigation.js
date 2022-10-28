@@ -4,7 +4,7 @@ const Navigation = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <div className="relative bg-white border-b-2 border-gray-100">
+    <div className="relative bg-white border-b-2 border-gray-100 z-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center  py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -13,7 +13,7 @@ const Navigation = () => {
                 <span className="sr-only">Storyblok</span>
                 <img
                   className="h-20 w-auto sm:h-10 hidden sm:block"
-                  src='storyblok-primary.png'
+                  src='https://a.storyblok.com/f/88751/251x53/0d3909fe96/storyblok-primary.png'
                   alt="Storyblok"
                 />
                 <img
@@ -71,6 +71,10 @@ const Navigation = () => {
           </div>
         </div>
       </div>
+
+      {/* <!--
+        Mobile menu, show/hide based on mobile menu state.
+      --> */}
       {openMenu && (
         <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
@@ -113,7 +117,6 @@ const Navigation = () => {
                 <nav className="grid gap-y-8">
                   <Link href="/about">
                     <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
-                      {/* <!-- Heroicon name: outline/chart-bar --> */}
                       <span className="ml-3 text-base font-medium text-gray-900">
                         
                         About
@@ -122,7 +125,6 @@ const Navigation = () => {
                   </Link>
                   <Link href="/blog">
                     <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
-                      {/* <!-- Heroicon name: outline/cursor-click --> */}
                       <span className="ml-3 text-base font-medium text-gray-900">
                         
                         Blog

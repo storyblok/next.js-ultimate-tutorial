@@ -18,6 +18,12 @@ You can switch between the different branches of this repository; there is one b
  - Branch: [part-2](https://github.com/storyblok/next.js-ultimate-tutorial/tree/part-2)
  - Storyblok space: [Create your own copy](https://app.storyblok.com/#!/build/166652)
   
+ 
+  ### Part 4
+ - Tutorial: [Create Custom Components in Storyblok and Next.js](https://www.storyblok.com/tp/create-custom-components-in-storyblok-and-next-js)
+ - Live demo: [Open in StackBlitz](https://stackblitz.com/edit/create-custom-components-in-storyblok-and-next-js)
+ - Branch: [part-4](https://github.com/storyblok/next.js-ultimate-tutorial/tree/part-4)
+ - Storyblok space: [Create your own copy](https://app.storyblok.com/#!/build/166654)
 
 ## Requirements
 

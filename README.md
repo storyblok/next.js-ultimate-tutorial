@@ -12,6 +12,12 @@ You can switch between the different branches of this repository; there is one b
  - Branch: [part-1](https://github.com/storyblok/next.js-ultimate-tutorial/tree/part-1)
  - Storyblok space: [Create your own copy](https://app.storyblok.com/#!/build/166651)
  
+ ### Part 2
+ - Tutorial: [Render Storyblok Stories Dynamically in Next.js](https://www.storyblok.com/tp/render-storyblok-stories-dynamically-in-next-js)
+ - Live demo: [Open in StackBlitz](https://stackblitz.com/edit/render-storyblok-stories-dynamically-in-next-js)
+ - Branch: [part-2](https://github.com/storyblok/next.js-ultimate-tutorial/tree/part-2)
+ - Storyblok space: [Create your own copy](https://app.storyblok.com/#!/build/166652)
+  
 
 ## Requirements
 

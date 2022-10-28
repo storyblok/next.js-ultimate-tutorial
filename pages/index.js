@@ -1,27 +1,24 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 
 import {
   useStoryblokState,
   getStoryblokApi,
   StoryblokComponent,
 } from "@storyblok/react";
+import Layout from "../components/Layout";
 
 export default function Home({ story }) {
   story = useStoryblokState(story);
 
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <header>
-        <h1>{story ? story.name : "My Site"}</h1>
-      </header>
-
+    <Layout>
       <StoryblokComponent blok={story.content} />
+    </Layout>
     </div>
   );
 }

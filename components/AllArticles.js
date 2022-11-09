@@ -8,10 +8,9 @@ const AllArticles = ({ blok, locale }) => {
   useEffect(() => {
     const getArticles = async () => {
       const storyblokApi = getStoryblokApi();
-      const { data } = await storyblokApi.get(`cdn/stories?starts_with=blog&language=${locale}`);
-      const filteredArticles = data.stories.filter((article) => article.name != "Home");
+      const { data } = await storyblokApi.get(`cdn/stories?starts_with=blog&is_startpage=false&language=${locale}`);
       
-      setArticles((prev) => filteredArticles.map((article) => {
+      setArticles((prev) => data.stories.map((article) => {
         article.content.slug = article.slug;
         return article;
       }));

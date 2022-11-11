@@ -1,11 +1,10 @@
-import Navigation from "./Navigation";
 import Footer from "./Footer";
+import Config from './Config'
 
-const Layout = ({ children, locale, locales, defaultLocale }) => (
+const Layout = ({ children, story }) => ( 
   <div>
-    <Navigation
-    />
-    {children}
+    <Config blok={story.content} />
+      {children}
     <Footer />
   </div>
 );

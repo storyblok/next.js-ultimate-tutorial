@@ -22,6 +22,10 @@ const components = {
 
 storyblokInit({
   accessToken: "xr4OhJ2GGQ6Oco2ugxQn0Att",
+  // for spaces located in the US:
+  // apiOptions: {
+  //   region: "us",
+  // },
   use: [apiPlugin],
   components,
 });

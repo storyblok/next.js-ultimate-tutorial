@@ -61,6 +61,10 @@ Create a new empty Space and exchange the preview token with your own in ```page
 // in pages/_app.js
 storyblokInit({
   accessToken: "your-preview-token",
+  // for spaces located in the US:
+  // apiOptions: {
+  //   region: "us",
+  // },
   use: [apiPlugin],
   components,
 });

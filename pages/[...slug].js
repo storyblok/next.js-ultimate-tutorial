@@ -50,7 +50,9 @@ export async function getStaticProps({ params, locales, locale, defaultLocale })
 
 export async function getStaticPaths({locales}) {
   const storyblokApi = getStoryblokApi();
-  let { data } = await storyblokApi.get("cdn/links/");
+  let { data } = await storyblokApi.get("cdn/links/" ,{
+    version: 'draft'
+  });
 
   let paths = [];
   Object.keys(data.links).forEach((linkKey) => {

@@ -18,6 +18,11 @@ You can switch between the different branches of this repository; there is one b
  - Branch: [part-2](https://github.com/storyblok/next.js-ultimate-tutorial/tree/part-2)
  - Storyblok space: [Create your own copy](https://app.storyblok.com/#!/build/166652)
   
+### Part 3
+ - Tutorial: [Create Dynamic Menus in Storyblok and Next.js](https://www.storyblok.com/tp/create-dynamic-menus-in-storyblok-and-nextjs)
+ - Live demo: [Open in StackBlitz](https://stackblitz.com/edit/create-dynamic-menus-with-nextjs)
+ - Branch: [part-3](https://github.com/storyblok/next.js-ultimate-tutorial/tree/part-3)
+ - Storyblok space: [Create your own copy](https://app.storyblok.com/#!/build/159575)
  
   ### Part 4
  - Tutorial: [Create Custom Components in Storyblok and Next.js](https://www.storyblok.com/tp/create-custom-components-in-storyblok-and-next-js)

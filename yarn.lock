@@ -93,19 +93,19 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@storyblok/js@^2.0.5":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@storyblok/js/-/js-2.0.5.tgz#a864f5a0e912e70268deffd46f754aa3a4127f07"
-  integrity sha512-q1HqJmogKmUf/f+4vp/KTUvsMJ42eh/45mlamxQUkA82jilmjIYaDD26dD3sQNaCW1KRmBD1CjaOCHWSoikYiA==
+"@storyblok/js@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@storyblok/js/-/js-2.2.2.tgz#2b055ca250565721d4d90ae9be1c6c58559228c5"
+  integrity sha512-2Ab4ULgMTRub4q2kqkz5YKhSAQjdhE8hFJ0OsxdMyLx4VSKmO+v7g+oS8iNDz9OWQnbPNdjEza3rqwRCtz0IEA==
   dependencies:
-    storyblok-js-client "^5.1.6"
+    storyblok-js-client "^5.11.1"
 
-"@storyblok/react@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@storyblok/react/-/react-2.0.0.tgz#4262830588efc58124d7a46c9021c09301344d8b"
-  integrity sha512-I2eLchwdRscOmMpVqSaqUOR4KKu3xvPARb8Ws6P1Io1QZxmDkcm5e5pim+t7es/VBG/lNNhcnjUkhLnTBz/vdA==
+"@storyblok/react@^2.1.9":
+  version "2.1.9"
+  resolved "https://registry.yarnpkg.com/@storyblok/react/-/react-2.1.9.tgz#4dd482d50358c9e97bab0a6eedf903f4de8f047f"
+  integrity sha512-oCSwYVh3zodLGtsBnXa4FsZqR+iAz5ZPTc7oN1oroGMVVsRcu+XGmDXHlPzcwwGK6fQFi2z+tOTE7GiQdMl/Sg==
   dependencies:
-    "@storyblok/js" "^2.0.5"
+    "@storyblok/js" "^2.2.2"
 
 "@swc/helpers@0.4.11":
   version "0.4.11"
@@ -589,10 +589,10 @@ source-map-js@^1.0.2:
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
   integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
 
-storyblok-js-client@^5.1.6:
-  version "5.2.3"
-  resolved "https://registry.yarnpkg.com/storyblok-js-client/-/storyblok-js-client-5.2.3.tgz#4d9e5969a484b031da8e38a34d0e6ce4f0c599be"
-  integrity sha512-24sKmE09QFFEH7ArwG8UmOwJakDs90AJBawwUrYxHuwIcD9VvVdI7ShpzdZa2s58Gch5cDCtdpQu3OZ4EjmX1w==
+storyblok-js-client@^5.11.1:
+  version "5.11.1"
+  resolved "https://registry.yarnpkg.com/storyblok-js-client/-/storyblok-js-client-5.11.1.tgz#bb0e78ed17c5619afc4cf4314566911e6b450674"
+  integrity sha512-SY5ka+5AsRwK2C+n3YcUIO1G1G6/54gJy+R0oLU30JpJ6Bc+fOD7PmB5M3uoKUdTHhKBZv4BGU599QSzh2HLQg==
 
 styled-jsx@5.0.7:
   version "5.0.7"

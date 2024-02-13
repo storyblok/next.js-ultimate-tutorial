@@ -4,16 +4,17 @@ import Feature from "../components/Feature";
 import Grid from "../components/Grid";
 import Page from "../components/Page";
 import Teaser from "../components/Teaser";
-
+import Cal from "../components/Cal";
 const components = {
   feature: Feature,
   grid: Grid,
   teaser: Teaser,
   page: Page,
+  Cal: Cal,
 };
 
 storyblokInit({
-  accessToken: "W1vLyxT5rQ15jBpANjnv0gtt",
+  accessToken: "HoiAq2aFOJ73kmyXQn6sKwtt",
   use: [apiPlugin],
   components,
   apiOptions: {

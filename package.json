@@ -10,6 +10,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.18",
+    "@heroicons/react": "^2.1.1",
     "@storyblok/react": "^2.4.7",
     "next": "^12.1.0",
     "react": "17.0.2",

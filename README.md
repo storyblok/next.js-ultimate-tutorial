@@ -4,11 +4,19 @@ In this tutorial series, you will learn how to build a headless website using St
 
 You can switch between the different branches of this repository; there is one branch for each tutorial part. Alternatively, you may want to check out the live demos on StackBlitz. You can even replicate the corresponding Storyblok space for each of the tutorial parts in order to explore its exact configuration. 
 
+## Open in an Online IDE of your choice
+Skip cloning locally, and start developing in the cloud
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/toryblok/next.js-ultimate-tutorial)
+[![Open in GitHub Codespace](https://github.com/codespaces/badge.svg)](https://codespaces.new/toryblok/next.js-ultimate-tutorial)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/toryblok/next.js-ultimate-tutorial)
+[![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/toryblok/next.js-ultimate-tutorial)
+
 ## Tutorial Parts
 
 ### Part 1
  - Tutorial: [Add a headless CMS to Next.js 3 in 5 minutes](https://www.storyblok.com/tp/add-a-headless-cms-to-next-js-in-5-minutes)
- - Live demo: [Open in StackBlitz](https://stackblitz.com/edit/nextjs-5-minutes)
+ - Live demo: [Open in StackBlitz](https://stackblitz.com/edit/nextjs-5-minutes) 
  - Branch: [part-1](https://github.com/storyblok/next.js-ultimate-tutorial/tree/part-1)
  - Storyblok space: [Create your own copy](https://app.storyblok.com/#!/build/166651)
  

@@ -1,3 +1,7 @@
+> [!WARNING]
+> This repository is no longer maintained.
+> For a current Next.js + Storyblok starter, use [blueprint-core-nextjs](https://github.com/storyblok/blueprint-core-nextjs).
+
 # The Storyblok Next Ultimate Tutorial
 
 In this tutorial series, you will learn how to build a headless website using Storyblok and Next.js. Starting with the fundamental integration of Storyblok in Next.js, more advanced functionalities are explained in bite-sized content pieces, such as dynamic page rendering, dynamic menus, custom components, multilingual content and more.
